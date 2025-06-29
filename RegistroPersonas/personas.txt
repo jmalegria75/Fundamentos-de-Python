@@ -2,3 +2,5 @@ Nombre,A. Paterno,A. Materno,Correo,Móvil,Ocupación,Afición,Estado
 Juan Manuel,Alegría,Bobadilla,jmalegría@hotmail.com,3312685716,Empleado,musica,Zacatecas
 Otro,Alegría,Bobadilla,jmalegría@hotmail.com,3312685716,Empleado,leer,Zacatecas
 Pedro,Perez,Sanchez,pedro@empresa.com.mx,3312346535,Desempleado,leer,Jalisco
+Jose,Salinas,Castañeda,jose@hotmail.com,2343422323,Empleado,videojuegos,Michoacan
+Jose2,Salinas,Castañeda,jose@hotmail.com,2343422323,Empleado,videojuegos,Michoacan

@@ -109,7 +109,11 @@ class Ventana:
         comboEstados = ttk.Combobox(fraEstados, textvariable=self.estado)
         comboEstados.grid(column=0, row=1, sticky=(N, W, E, S))
 
-        comboEstados['values'] = ("Jalisco", "Nayarit", "Colima", "Michoacan", "Zacatecas")
+        comboEstados['values'] = ("Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua",
+                                "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero",
+                                "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro",
+                                "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz",
+                                "Yucatán", "Zacatecas")
         #endregion
 
         #region <Marco Botonos> 
@@ -121,7 +125,7 @@ class Ventana:
         btnGuardar = ttk.Button(fraBotones, text="Guardar", command=self.Guardar)
         btnGuardar.grid(column=1, row=1, sticky=(W))
         btnGuardar.grid_configure(padx=0, pady=0)
-        btnCancelar = ttk.Button(fraBotones, text="Cancelar")
+        btnCancelar = ttk.Button(fraBotones, text="Cancelar", command=self.cerrar_ventana)
         btnCancelar.grid(column=2, row=1, sticky=(E))
         btnCancelar.grid_configure(padx=20, pady=0)
         #endregion
@@ -130,6 +134,9 @@ class Ventana:
             child.grid_configure(padx=5, pady=5)
 
         self.raiz.mainloop()
+
+    def cerrar_ventana(self):
+        self.raiz.destroy()  # Cierra la ventana principal
 
     def Guardar(self):
 
