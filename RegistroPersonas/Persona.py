@@ -1,6 +1,3 @@
-#import csv
-#import os
-#from tkinter import messagebox
 
 class Persona:
     def __init__(self, nombre, a_paterno, a_materno, correo, movil, ocupacion, aficion, estado):
@@ -69,30 +66,4 @@ class Persona:
         return self.estado
     
     #endregion
-
-
-
-    #def ObtenerLista(self):
-    #    # Obtener los datos de la persona en una lista 
-    #    return [self.Nombre, self.a_paterno, self.a_materno, self.correo, self.movil, self.ocupacion, self.aficion, self.estado]
     
-    #def GuardarDatos(self):
-    #
-    #    archivo = "./RegistroPersonas/personas.txt"
-    #
-    #    # Vamos a crear el archivo con encabezados 
-    #    if not os.path.exists(archivo):
-    #        with open(archivo, mode='w', newline='', encoding='utf-8') as f:
-    #            writer = csv.writer(f)
-    #            writer.writerow(['Nombre', 'A. Paterno', 'A. Materno', 'Correo', 'Móvil', 'Ocupación', 'Afición', 'Estado'])
-    #
-    #    #Agrega los datos al archivo 
-    #    with open(archivo, mode='a', newline='', encoding='utf-8') as f:
-    #        writer = csv.writer(f)
-    #        writer.writerow(self.ObtenerLista())
-    #
-    #        messagebox.showinfo("Información", "Los datos de la persona se han guadado con éxito.")
-    #
-    #
-    #    print(self.Nombre, self.a_paterno)
-    #    print(self.ObtenerLista())
